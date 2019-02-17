@@ -1,15 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
+import ScoreCounter from './ScoreCounter';
+import "./Header.css";
 
-class Header extends Component {
-  render() {
-    return (
-      <>
-        <header>
-          <h1>Memory Game</h1>
-        </header>
-      </>
-    );
-  }
-}
-
+const Header = props => (
+  <>
+    <header>
+      <h1>SMASH MEMORY</h1>
+      <ScoreCounter
+        score={props.score}
+        hiScore={props.hiScore}
+      />
+    </header>
+  </>
+)
 export default Header;

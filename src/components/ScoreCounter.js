@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class ScoreCounter extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    );
-  }
-}
+const ScoreCounter = props => (
+  <div>
+    <strong>Score:</strong> {props.score} | <strong>High Score:</strong> {props.hiScore}
+  </div>
+);
 
 export default ScoreCounter;

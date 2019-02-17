@@ -1,3 +1,5 @@
+// Create an array of arrays, each holding the image-url and
+// name of a fighter respectively
 const fighters = [
   ["lucina", "Lucina"],
   ["inkling", "Inkling"],
@@ -14,9 +16,13 @@ const fighters = [
   ["fox", "Fox"],
   ["marth", "Marth"],
   ["kirby", "Kirby"],
-  ["ice-climbers", "Ice Climbers"]
+  ["ice-climbers", "Ice Climbers"],
+  ["pikachu", "Pikachu"],
+  ["jigglypuff", "Jigglypuff"]
 ]
 
+// Create and generate array of card objects from
+// fighters array
 const cards = [];
 
 for (let i = 0; i < fighters.length; i++) {
